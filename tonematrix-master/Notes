@@ -1,0 +1,9 @@
+function setArcHeight
+input: Circle size
+Output: Setp between each arc in one column
+Output: Size Height of the arc
+
+function setArcWide
+input: Number of slices
+output: Angle step
+

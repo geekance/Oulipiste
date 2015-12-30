@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+	padding: 0;
+    background: black;
+    overflow: hidden;
+    -webkit-user-select: none;
+    
+}
+
+#tonematrix {
+    display: block;
+    width: 800px;
+    height: 540px;
+    z-index: 150;
+
+}
+input
+[type=radio] {
+    width: 20px;
+    height: 20px;
+}
+
+#video {
+    position:absolute;
+    z-index: 1;
+}
+#canvas {
+    position: absolute;
+    z-index: 1;
+}
+/*.note {
+    position: absolute;
+    background: #999;
+    -webkit-transition: 0.5s;
+}
+.note.active {
+    background: #262626;
+}
+.note.hit {
+    pointer-events:none;
+    z-index: 5;
+    -webkit-animation: hit 0.3s ease-in-out;
+}
+*/
+@-webkit-keyframes border-color {
+    from {
+        /*background: rgba(255,255,255,0.5);*/
+        opacity: 0.5;
+        /*border-radius: 50%;*/
+        /*-webkit-transform: scale3d(1,1,1);*/
+    }
+    to {
+        /*background: rgba(255,255,255,0.5);*/
+        opacity: 0;
+        /*border-radius: 50%;*/
+        /*-webkit-transform: scale3d(5,5,1);*/
+    }
+}
+
+
+/**
+ * HTML5 / CSS3 Circle with Partial Border
+ * http://stackoverflow.com/q/13059190/1397351
+ */
+* { margin: 0; padding: 0; }
+.circle {
+    /*pointer-events:none;*/
+    position: absolute;
+    left: 581px;
+    top: 99px;
+    z-index: 2;
+    margin: 15em auto;
+    width: 120px; height: 120px; /*size of the circle*/
+    border-radius: 50%;
+    /*background: -webkit-radial-gradient(center center,170px 170px, rgba(0, 0, 100, 0.3), transparent, transparent);*/
+
+
+}
+.note {
+    overflow: hidden;
+    position: absolute;
+    top: -15px; right: 50%; bottom: 50%; left: -15px;
+    pointer-events:none;
+    /*background: #ffffff;*/
+    transform-origin: 100% 100%;
+    transform: rotate(0deg) skewX(30deg);
+    -webkit-transition: 0.5s;
+}
+.note:before {
+    opacity: 0.5;
+    pointer-events:all;
+    background: transparent;
+    box-sizing: border-box;
+    box-shadow: 20;
+    display: block;
+    border: solid 3.9em navy; /*height of the arc*/
+    width: 200%; height: 200%;
+    border-radius: 50%;
+    transform: skewX(-46deg);
+    content: '';
+}
+
+.note.hit:before {
+    pointer-events:none;
+    z-index: 5;
+    border-color: rgba(250,0,0,0.5);
+    /*-webkit-animation: hit 0.3s ease-in-out;*/
+}
+
+.note.buzzed:before {
+    border-color: gray; 
+}
+
+.note.recording:before {
+    border-color: red; 
+}
+    
+.note.light:before {
+    border-color: rgba(0,100,250,1);
+    /*transition: opacity 0.01s ease-in-out;*/
+    /*-webkit-animation: border-color 2s ease-in-out;*/
+}

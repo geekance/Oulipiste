@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<sonsAmiens>
+	<sourceRecordings>assets/sounds/samples_amiens/recordings/filename</sourceRecordings>
+	<sampledirectory>assets/sounds/samples_amiens</sampledirectory>
+	<istracking>false</istracking>
+	<isdetectingbuzz>false</isdetectingbuzz>
+	<ismanual>true</ismanual>
+	<session>
+		<instrument>assets/sounds/samples_amiens/séquenceur/drum chelou 2/</instrument>
+		<color>255, 255, 255</color>
+		<instrument>assets/sounds/samples_amiens/séquenceur/mandoline/</instrument>
+		<color>0, 255, 0</color>
+		<instrument>assets/sounds/samples_amiens/séquenceur/basse/</instrument>
+		<color>0, 255, 255</color>
+		<instrument>assets/sounds/samples_amiens/séquenceur/steel drum/</instrument>
+		<color>100, 0, 255</color>
+		<instrument>assets/sounds/samples_amiens/séquenceur/voix/</instrument>
+		<color>0, 0, 255</color>
+		<instrument>assets/sounds/samples_amiens/séquenceur/decay/</instrument>
+		<color>255, 0, 255</color>
+		<instrument>assets/sounds/samples_amiens/séquenceur/toum belge/</instrument>
+		<color>100, 0, 80</color>
+		<instrument>assets/sounds/samples_amiens/séquenceur/tomS/</instrument>
+		<color>255, 255, 255</color>
+		
+	</session>
+</sonsAmiens>
+</xml>
+
+mandoline seel voix basse tom
